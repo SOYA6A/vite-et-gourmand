@@ -1,1 +1,1 @@
-# vite-et-gourmand
+# vite-et-gourmand 🍽️
