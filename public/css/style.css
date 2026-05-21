@@ -265,3 +265,133 @@ body {
   font-size: 13px;
   color: #888;
 }
+/* PAGE HEADER */
+.page-header {
+  background: linear-gradient(135deg, #c0392b, #e67e22);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* FILTRES */
+.filtres {
+  background: #f9f9f9;
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.filtres-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.filtre-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filtre-item label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.filtre-item input[type="range"] {
+  width: 150px;
+}
+
+.filtre-item select,
+.filtre-item input[type="number"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn-reset {
+  background: #fff;
+  color: #c0392b;
+  border: 1px solid #c0392b;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: all 0.2s;
+}
+
+.btn-reset:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+/* MENUS LISTE */
+.menus-liste {
+  padding: 60px 0;
+}
+
+.menus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+  position: relative;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.menu-badge.noel { background: #fde8e8; color: #c0392b; }
+.menu-badge.paques { background: #e8f8e8; color: #27ae60; }
+.menu-badge.classique { background: #e8f0fe; color: #2980b9; }
+.menu-badge.evenement { background: #fef3e8; color: #e67e22; }
+
+.menu-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.menu-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.menu-infos {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
