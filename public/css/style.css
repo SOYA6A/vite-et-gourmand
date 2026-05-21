@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #c0392b;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #c0392b;
+}
+
+.btn-connexion {
+  background: #c0392b;
+  color: #fff !important;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.btn-connexion:hover {
+  background: #a93226;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #c0392b, #e67e22);
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: #c0392b;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #a93226;
+}
+
+/* PRÉSENTATION */
+.presentation {
+  padding: 70px 0;
+  text-align: center;
+  background: #fdf6f0;
+}
+
+.presentation h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+.presentation p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* ÉQUIPE */
+.equipe {
+  padding: 70px 0;
+  text-align: center;
+}
+
+.equipe h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #c0392b;
+}
+
+.equipe-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 36px 30px;
+  width: 280px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-avatar {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* AVIS */
+.avis {
+  padding: 70px 0;
+  background: #fdf6f0;
+  text-align: center;
+}
+
+.avis h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #c0392b;
+}
+
+.avis-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.avis-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.etoiles {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.avis-card p {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.avis-card span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* FOOTER */
+.footer {
+  background: #2c2c2c;
+  color: #ccc;
+  padding: 50px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #c0392b;
+}
+
+.footer-contact p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
