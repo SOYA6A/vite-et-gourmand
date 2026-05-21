@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion – Vite & Gourmand</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">🍽️ Vite & Gourmand</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menus.html">Nos menus</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn-connexion">Connexion</a></li>
+    </ul>
+  </nav>
+
+  <section class="auth-section">
+    <div class="auth-container">
+
+      <!-- CONNEXION -->
+      <div class="auth-box" id="box-connexion">
+        <h2>Connexion</h2>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="votre@email.com">
+        </div>
+        <div class="form-group">
+          <label>Mot de passe</label>
+          <input type="password" placeholder="••••••••••">
+        </div>
+        <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+        <div id="msg-erreur" style="color:red;display:none;margin-bottom:10px"></div>
+        <button class="btn-primary btn-full">Se connecter</button>
+        <p class="switch-auth">Pas encore de compte ? <a href="inscription.html">S'inscrire</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Vite & Gourmand — Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+<script>
+function seConnecter() {
+  const email = document.getElementById('login-email').value.trim();
+  const mdp = document.getElementById('login-mdp').value.trim();
+  const erreur = document.getElementById('msg-erreur');
+  const comptes = [
+    {email:'admin@vite-gourmand.fr', mot_de_passe:'Admin@2026', role:'administrateur'},
+    {email:'employe@vite-gourmand.fr', mot_de_passe:'Employe@2026', role:'employe'},
+    {email:'user@vite-gourmand.fr', mot_de_passe:'User@2026', role:'utilisateur'}
+  ];
+  const compte = comptes.find(c => c.email === email && c.mot_de_passe === mdp);
+  if (compte) {
+    localStorage.setItem('user', JSON.stringify(compte));
+    window.location.href = 'index.html';
+  } else {
+    erreur.textContent = 'Email ou mot de passe incorrect.';
+    erreur.style.display = 'block';
+  }
+}
+</script>
+</body>
+</html>
